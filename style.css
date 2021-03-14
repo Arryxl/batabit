@@ -494,8 +494,8 @@ main
 {
     position: relative;
     width: 70%;
-    min-width: 230;
-    max-width: 300;
+    min-width: 230px;
+    max-width: 300px;
     height: 250px;
     margin: 50px auto 0;
     padding: 0 15px;
@@ -532,7 +532,6 @@ main
     padding: 5px 0;
     font-size: 5.2rem;
     font-weight: bold;
-    line-height: 6.3rem;
     color: black;
 }
 
@@ -541,4 +540,35 @@ main
     font-size: 1.2rem;
     margin-bottom: 10px;
     font-weight: 300;
+    vertical-align: 25px;
+}
+
+.plan-card-saving
+{
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+.plan-card-ca
+{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: "DM Sans", sans-serif;
+}
+
+.plan-card-ca span
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    vertical-align: text-bottom;
 }
