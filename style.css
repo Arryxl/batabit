@@ -489,6 +489,14 @@ main
     color: #757575;
 }
 
+.arrow-right
+{
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+}
+
 .plans-container-slider
 {
     display: flex;
