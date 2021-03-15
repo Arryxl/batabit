@@ -24,7 +24,6 @@ html
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
     scroll-behavior: smooth;
-    transition-duration: 2s;
 }
 
 header
@@ -493,13 +492,27 @@ main
 .plans-container-card
 {
     position: relative;
-    width: 70%;
+    width: 60%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
     margin: 50px auto 0;
     padding: 0 15px;
     background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.plans-container-card-limited
+{
+    position: relative;
+    width: 60%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--black);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
@@ -518,6 +531,34 @@ main
     color: var(--just-white);
 }
 
+.basico
+{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    padding: 7px;
+    background-color: var(--secondary-blue);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+
+.limitado
+{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    padding: 7px;
+    background-color: var(--grey);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+
 .plan-card-title
 {
     padding-top: 30px;
@@ -525,6 +566,15 @@ main
     font-weight: 500;
     line-height: 1.8rem;
     color: black;
+}
+
+.plan-card-title-limited
+{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: rgb(255, 255, 255);
 }
 
 .plan-card-price
@@ -536,6 +586,22 @@ main
 }
 
 .plan-card-price span
+{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+    vertical-align: 25px;
+}
+
+.plan-card-price-limited
+{
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.plan-card-price-limited span
 {
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -565,6 +631,30 @@ main
 }
 
 .plan-card-ca span
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    vertical-align: text-bottom;
+}
+
+.plan-card-ca-limited
+{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #454349;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    font-family: "DM Sans", sans-serif;
+}
+
+.plan-card-ca-limited span
 {
     display: inline-block;
     width: 20px;
